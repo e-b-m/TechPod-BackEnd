@@ -1,4 +1,4 @@
 package org.tech_pod.model;
 
-public class JobPost {
+public class Resource {
 }

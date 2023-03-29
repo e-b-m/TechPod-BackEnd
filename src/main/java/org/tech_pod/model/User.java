@@ -1,8 +1,9 @@
 package org.tech_pod.model;
-
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
 import java.net.URL;
+import java.util.List;
 
 @Entity(name="user")
 public class User {
@@ -32,8 +33,28 @@ public class User {
     @Column (name = "websites")
     private URL websites;
 
+//    @Column (name = "event")
+//    private List<Event> events;
 
+//    @Column (name = "job_post")
+//    private List<JobPost> jobPosts;
 
+//    @Column (name = "blog_post")
+//    private List<BlogPost> blogPosts;
+//
+//    @Column (name = "resource")
+//    private List<Resource> resources;
 
+    @OneToMany(mappedBy = "user")
+    private List<Event> events;
+
+    @OneToMany(mappedBy = "user")
+    private List<JobPost> jobPosts;
+
+    @OneToMany(mappedBy = "user")
+    private List<BlogPost> blogPosts;
+
+    @OneToMany(mappedBy = "user")
+    private List<Resource> resources;
 }
 

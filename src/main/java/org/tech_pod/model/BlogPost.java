@@ -1,2 +1,4 @@
-package org.tech_pod.model;public class BlogPost {
+package org.tech_pod.model;
+
+public class BlogPost {
 }
