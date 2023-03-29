@@ -2,8 +2,9 @@ package org.tech_pod.model;
 
 
 import javax.persistence.*;
+import java.net.URL;
 
-@Entity(name="user_profiles")
+@Entity(name="user")
 public class User {
 
     @Id
@@ -28,7 +29,8 @@ public class User {
     @Column (name = "occupation")
     private String occupation;
 
-
+    @Column (name = "websites")
+    private URL websites;
 
 
 
