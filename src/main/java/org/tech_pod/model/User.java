@@ -1,5 +1,4 @@
 package org.tech_pod.model;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.springframework.boot.autoconfigure.batch.BatchProperties;
 
 import javax.persistence.*;
@@ -67,17 +66,17 @@ public class User {
         this.bio = bio;
         this.occupation = occupation;
         this.websites = websites;
-        this.events = new ArrayList<Event>();
-        this.jobPosts = new ArrayList<JobPost>();
-        this.blogPosts = new ArrayList<BlogPost>();
-        this.resources = new ArrayList<Resource>();
+        this.events = new ArrayList<>();
+        this.jobPosts = new ArrayList<>();
+        this.blogPosts = new ArrayList<>();
+        this.resources = new ArrayList<>();
     }
 
     public User(){}
 
     // Getters & Setters
 
-    public Long getId() {return id};
+    public Long getId() {return id;}
 
     public void setId(Long id) {this.id = id;}
 
