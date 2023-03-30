@@ -6,7 +6,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-@Entity(name="user")
+@Entity(name="users")
 public class User {
 
     @Id

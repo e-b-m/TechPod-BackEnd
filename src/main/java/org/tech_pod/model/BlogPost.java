@@ -7,7 +7,7 @@ import net.bytebuddy.asm.Advice;
 import javax.persistence.*;
 import java.time.LocalDate;
 
-@Entity(name = "blogPost")
+@Entity(name = "blog_posts")
 public class BlogPost {
 
     @Id
