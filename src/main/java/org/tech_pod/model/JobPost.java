@@ -47,5 +47,25 @@ public class JobPost {
 
     // Getters & Setters
 
+    public String getTitle(){return title;}
+    public void setTitle(String title){this.title = title;}
+
+    public LocalDate getStartDate(){return startDate;}
+    public void setStartDate(LocalDate startDate){this.startDate = startDate;}
+
+    public LocalDate getDeadline(){return deadline;}
+    public void setDeadline(LocalDate deadline){this.deadline = deadline;}
+
+    public String getLocation(){return location;}
+    public void setLocation(String location){this.location=location;}
+
+    public int getSalary(){return salary;}
+    public void setSalary(int salary){this.salary = salary;}
+
+    public String getDescription(){return description;}
+    public void setDescription(String description){this.description = description;}
+
+    public User getUser(){return user;}
+    public void setUser(User user){this.user = user;}
 
 }
