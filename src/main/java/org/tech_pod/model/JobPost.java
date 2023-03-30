@@ -1,4 +1,5 @@
 package org.tech_pod.model;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import net.bytebuddy.asm.Advice;
 
 import javax.persistence.*;
@@ -31,6 +32,7 @@ public class JobPost {
 
     @ManyToOne
     @JoinColumn(name = "user_id")
+    @JsonIgnoreProperties({"jobPosts"})
     private User user;
 
     public JobPost (String title, LocalDate startDate, LocalDate deadline, String location, int salary, String description, User user){

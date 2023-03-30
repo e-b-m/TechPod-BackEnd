@@ -1,5 +1,8 @@
 package org.tech_pod.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.databind.annotation.JsonAppend;
+
 import javax.persistence.*;
 import java.net.URL;
 import java.time.LocalDate;
@@ -32,6 +35,7 @@ public class Event {
 
     @ManyToOne
     @JoinColumn(name = "user_id")
+    @JsonIgnoreProperties({"events"})
     private User user;
 
     public Event(String name, LocalDate date, String location, LocalTime time, URL link, String description, User user){
