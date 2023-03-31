@@ -1,9 +1,5 @@
 package org.tech_pod.model;
-
-
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import net.bytebuddy.asm.Advice;
-
 import javax.persistence.*;
 import java.time.LocalDate;
 
