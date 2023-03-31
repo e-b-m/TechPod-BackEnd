@@ -4,3 +4,10 @@
 
 <h1 align="center">TechPod: Community in a click...</h1>
 
+## Project Description
+
+## Features 
+
+## Installation Instructions
+
+## Extensions 
