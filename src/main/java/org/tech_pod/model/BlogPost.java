@@ -19,8 +19,8 @@ public class BlogPost {
     @Column(name = "author")
     private String author;
 
-    @Column(name = "post")
-    private String post;
+    @Column(name = "content")
+    private String content;
 
    @ManyToOne
    @JoinColumn(name = "user_id")
@@ -28,11 +28,11 @@ public class BlogPost {
    private User user;
 
 
-   public BlogPost(String title, LocalDate date, String author, String post, User user){
+   public BlogPost(String title, LocalDate date, String author, String content, User user){
        this.title = title;
        this.date = date;
        this.author = author;
-       this.post = post;
+       this.content = content;
        this.user = user;
    }
 
@@ -54,9 +54,9 @@ public class BlogPost {
 
    public void setAuthor(String author){this.author = author;}
 
-   public String getPost(){return post;}
+   public String getPost(){return content;}
 
-   public void setPost(String post){this.post = post;}
+   public void setPost(String content){this.content = content;}
 
    public  User getUser(){return user;}
 
