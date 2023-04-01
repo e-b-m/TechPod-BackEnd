@@ -1,4 +1,13 @@
 package org.tech_pod.repositories;
 
-public class EventRepository {
+import org.springframework.boot.json.JacksonJsonParser;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+import org.tech_pod.model.User;
+
+import java.util.List;
+
+@Repository
+public interface EventRepository extends JpaRepository {
+    List<User> findByNameEquals(String name);
 }
