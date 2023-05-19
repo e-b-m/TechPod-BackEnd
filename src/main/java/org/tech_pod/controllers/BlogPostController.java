@@ -23,8 +23,5 @@ public class BlogPostController {
     @Autowired
     UserService userService;
 
-    @GetMapping
-    public ResponseEntity<List<User>> getAllUsers(){
-       return new ResponseEntity<>(userService.getAllUsers(), HttpStatus.OK) ;
-    }
+
 }

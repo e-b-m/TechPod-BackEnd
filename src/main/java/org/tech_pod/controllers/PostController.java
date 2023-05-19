@@ -10,6 +10,5 @@ public class PostController {
 
     @Autowired
     PostService postService;
-    
 
 }
