@@ -14,4 +14,13 @@ public class JobPostService {
     JobPostRepository jobPostRepository;
 
     public List<JobPost> getAllJobPosts() { return (List<JobPost>) jobPostRepository;}
+
+    public JobPost createJobPost(JobPost jobPost) {
+        jobPostRepository.save(jobPost);
+        return jobPost;
+    }
+
+    public void deleteJobPost (Long id){
+        jobPostRepository.deleteById(id);
+    }
 }
