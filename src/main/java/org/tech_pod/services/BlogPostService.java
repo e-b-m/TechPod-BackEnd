@@ -12,4 +12,16 @@ public class BlogPostService {
     BlogPostRepository blogPostRepository;
 
     public List<BlogPost> getAllBlogPosts() {return blogPostRepository.findAll();}
+
+    public BlogPost createBlogPost(BlogPost blogPost) {
+        blogPostRepository.save(blogPost);
+        return blogPost;
+    }
+
+    public void deleteBlogPost(Long id) {
+        blogPostRepository.deleteById(id);
+    }
+
 }
+
+
