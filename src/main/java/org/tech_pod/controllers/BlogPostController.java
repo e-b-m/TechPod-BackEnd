@@ -4,7 +4,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.tech_pod.model.BlogPost;
-import org.tech_pod.model.User;
 import org.tech_pod.services.BlogPostService;
 import org.tech_pod.services.UserService;
 

@@ -14,4 +14,8 @@ public class EventService {
     EventRepository eventRepository;
 
     public List<Event> getAllEvents() {return eventRepository.findAll();}
+
+    public Event createEvent(Event event) {
+        eventRepository.save(event);
+    return event; }
 }
