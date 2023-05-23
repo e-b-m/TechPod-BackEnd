@@ -8,7 +8,28 @@ import java.util.List;
 @Service
 public class ResourceService {
     @Autowired
-    ResourceRepository resourceRepository;}
+    ResourceRepository resourceRepository;
+
+    public List<Resource> getAllResources(){
+        return resourceRepository.findAll();
+    }
+
+    public Resource createResource(Resource resource){
+        resourceRepository.save(resource);
+        return resource;
+    }
+
+    public void deleteResource(Long id){
+        resourceRepository.deleteById(id);
+    }
+
+
+
+}
+
+
+
+
 
 
 

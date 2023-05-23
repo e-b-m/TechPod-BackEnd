@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.*;
 import org.tech_pod.model.BlogPost;
 import org.tech_pod.services.BlogPostService;
 import org.tech_pod.services.UserService;
-
 import java.util.List;
 
 @RestController

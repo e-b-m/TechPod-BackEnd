@@ -7,7 +7,6 @@ import org.tech_pod.model.Event;
 import org.tech_pod.model.User;
 import org.tech_pod.services.EventService;
 import org.tech_pod.services.UserService;
-
 import java.util.List;
 
 @RestController
