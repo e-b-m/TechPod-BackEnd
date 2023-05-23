@@ -30,6 +30,10 @@ public class EventController {
        return new ResponseEntity<>(eventService.createEvent(event), HttpStatus.OK);
     }
 
-    @DeleteMapping
-    public
+    @DeleteMapping (value = "/{id}")
+    public ResponseEntity deleteEvent(@PathVariable Long id){
+       eventService.deleteEvent(id);
+       return new ResponseEntity("You successfull deleted this event", HttpStatus.OK);
+    }
+
 }
